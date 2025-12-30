@@ -1,11 +1,9 @@
 use anyhow::Result;
-use gstreamer as gst;
+
+mod utils;
 
 fn main() -> Result<()> {
-    env_logger::init();
-    gst::init()?;
-
-    println!("GStreamer version: {}", gst::version_string());
-
-    Ok(())
+    let version = utils::version::gstreamer_version()?;
+    println!("GStreamer version: {}", version);
+    return Ok(());
 }
