@@ -1,0 +1,20 @@
+{
+  "name": "Rust GStreamer Dev Container (arm64)",
+  "workspaceFolder": "/workspaces/chat-stream/api",
+  "build": {
+    "context": "..",
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "rust-lang.rust-analyzer",
+        "mkhl.shfmt",
+        "bungcip.better-toml"
+      ]
+    }
+  },
+  "forwardPorts": [],
+  "postCreateCommand": "cargo build",
+  "remoteUser": "root"
+}

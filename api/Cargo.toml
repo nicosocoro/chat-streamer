@@ -1,0 +1,21 @@
+[package]
+name = "api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Core GStreamer bindings
+gstreamer = "0.22"
+
+# Optional but very commonly needed
+gstreamer-video = "0.22"
+gstreamer-audio = "0.22"
+gstreamer-app = "0.22"
+
+# Error handling (idiomatic Rust)
+anyhow = "1.0"
+thiserror = "1.0"
+
+# Logging (important for debugging pipelines)
+log = "0.4"
+env_logger = "0.11"

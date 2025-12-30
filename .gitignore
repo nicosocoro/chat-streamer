@@ -1,0 +1,76 @@
+############################
+# Rust / Cargo
+############################
+
+# Compiled files
+/target/
+
+# Cargo lock (binary only)
+# Keep Cargo.lock if this is a library
+# Cargo.lock
+
+# Rust analyzer
+**/.rustc_info.json
+**/.cargo-cache/
+
+############################
+# GStreamer
+############################
+
+# GStreamer registry cache
+**/.cache/gstreamer-1.0/
+**/.gstreamer-1.0/
+
+# Pipeline logs / dumps
+*.gst
+*.dot
+*.dot.png
+*.gstlog
+
+############################
+# Dev Containers / Docker
+############################
+
+# Local devcontainer overrides
+.devcontainer/devcontainer.local.json
+
+# Docker build artifacts
+*.pid
+*.log
+
+# VS Code server files (inside container)
+.vscode-server/
+.vscode-server-insiders/
+
+############################
+# VS Code (keep settings.json if desired)
+############################
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+
+############################
+# OS / Editor noise
+############################
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+.nfs*
+
+# Windows
+Thumbs.db
+desktop.ini
+
+############################
+# Temporary files
+############################
+
+*.tmp
+*.swp
+*.swo
+*.core
