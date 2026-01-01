@@ -2,6 +2,8 @@ FROM rust:1.82-slim-bookworm
 
 WORKDIR /app
 
+RUN rm ~/.bashrc
+COPY .devcontainer/bashrc /root/.bashrc
 COPY api/Cargo.toml ./Cargo.toml
 COPY api/src ./src
 

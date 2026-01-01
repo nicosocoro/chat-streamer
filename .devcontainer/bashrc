@@ -1,0 +1,2 @@
+alias gl="gst-launch-1.0"
+alias gi="gst-inspect-1.0"
